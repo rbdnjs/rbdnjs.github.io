@@ -3,117 +3,124 @@
 <head>
 <title>질병관리본부</title>
 <style type="text/css">
-*{
-	 padding: 0;
-	 margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
-li{
+li {
 	list-style-type: none;
 }
-.clear{
+.clear {
 	clear: both;
 }
-#page{
-	width:1300px;
-	margin: auto;
-	border : solid 0px red;
-}
-header{
+header {
 	width: 1300px;
 	height: 100px;
 	margin-top: 10px;
-	border : 1px solid #bbbbbb;
+	border: dotted 1px #cccccc; 
 }
-nav{
-   width: 1300px;
-   height: 70px;
-   margin-top: 10px;
-   border : 1px solid #bbbbbb;
+#logo {
+	margin-top: 10px;
+	float: left;
 }
-nav li{
-   display: inline-block;
-   margin: 20px 30px;
+#top {
+	float: right;
+	margin: 30px 20px 0 0;
 }
-section{
-   float: left;
-   margin-top: 10px;
-   padding-bottom: 20px;
-   padding-right: 20px;
-   border: dotted 1px #cccccc;
+nav {
+	width: 1300px;
+	height: 70px;
+	margin-top: 10px;
+	border: dotted 1px #cccccc; 
 }
-aside{
-   float: right;
-   margin-top: 10px;
-   border: 1px solid #bbbbbb;
+nav li {
+	float: left;
+	margin: 20px 30px;
 }
-aside li{
-   margin-bottom: 30px;
-   text-align: right;
+section {
+	float: left;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	border: dotted 1px #cccccc; 
 }
-footer{
+aside {
+	float: right;
+	margin-top: 10px;
+	border: dotted 1px #cccccc; 
+}
+aside li {
+	margin-bottom: 30px;
+	text-align: right;
+}
+footer {
 	width: 1300px;
 	height: 100px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border: dotted 1px #cccccc;
+	border: dotted 1px #cccccc; 
 }
-#logo{
-   float : left;
-   margin-top: 10px;
+#address {
+	float: left;
+	margin: 10px 0 0 10px;
 }
-#top{
-   float : right;
-   margin: 30px 20px 0 0;
+#customer {
+	float: right;
+	margin: 10px 0 0 180px;
 }
 #sub1{
-	
+	width: 1000px;
 }
 #sub1 li{
 	display: inline-block;
 	padding-right: 20px;
 	text-align: center;
 }
-#sub1 img:hover {
+#sub1 img:hover{
 	box-shadow: 5px 5px 10px gray;
-    transform: translate(5px,-5px);
+	transform: translate(5px, -5px);
+}
+#sub2{
+	width: 1000px;
 }
 #sub2 li{
 	display: inline-block;
-	width: 160px;
-	text-align: center;
+	width: 120px;
 	padding-right: 20px;
+	margin: 20 0 20 50px;
+	text-align: center;
 }
-#sub2 img{
+#sub2 img {
 	width:80px;
 	height:80px;
 	border-radius: 50% 50%;
 }
-#sub2 img hover{
-	transform-scale:(1.1);
+#sub2 img:hover{
+	transform: scale(1.1);
+}
+#sub3{
+	width: 1000px;
 }
 #sub3 li{
 	display: inline-block;
 	margin-right: 16px;
 	overflow: hidden;
 }
-#sub3 img{
-	width: 250px;
-	height: 180px;
-	border: 0px solid pink;
-	display: block; /* 아래여백 제거*/
+#sub3 img {
+	width: 200px;
+	height: 120px;
+	border :0px solid pink;	
+	display: block; /* 아래여백*/
 }
 #sub3 img:hover{
-	transform-scale:(1.1);
-	border: 0px solid pink;
+	transform: scale(1.1);
+	border :0px solid pink;
 	transition: transform 1s;
 }
-#address{
-	float: left;
-	margin: 10px 0 0 10px;
-}
-#customer{
-	float: right;
-	margin: 10px 0 10px 0;
+#page {
+	width: 1300px;
+	margin: auto;
+	border: solid 0px red;
 }
 </style>
 </head>
@@ -126,6 +133,7 @@ footer{
 		로그인 ㅣ 회원가입 ㅣ<a href="name.html"> 마이페이지 </a> ㅣ 고객센터
 </div>
 </header>
+<div class='clear'></div> <!-- float 속성 해제 -->
 <nav>
 	<ul>
 		<li><a href="rlrhksthro.html"> 감염병 </a></li>
@@ -139,10 +147,9 @@ footer{
 		<li> 사업별홈페이지</li>
 	</ul>
 </nav>	
+<div id='clear'></div> <!-- float 속성 해제 -->
 <section>
-<div class="clear">
-    <a href="http://ncov.mohw.go.kr/"><img src="./IMG/MAIN.PNG" width="900"></a>
-</div>	
+    <a href="http://ncov.mohw.go.kr/"><img src="./IMG/MAIN.PNG" width="1000"></a>
 </section>
 <aside>
 	<ul>
@@ -158,6 +165,7 @@ footer{
 		<li> <a href="http://www.cdc.go.kr/contents.es?mid=a21110000000"><img src="./IMG/s2.PNG" width="200"> </a><br>법정감염병분류체계개편</li>
 		<li> <a href="https://www.cdc.go.kr/board.es?mid=a20501000000&bid=0015&act=view&list_no=365117"><img src="./IMG/s3.PNG" width="200"> </a><br>액상형전자담배 관련 폐손상 </li>
 		<li> <a href="http://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004"><img src="./IMG/s4.PNG" width="200"> </a><br>코로나19 영상자료 </li>
+	</ul>
 </section>
 <section>
 	<ul id="sub2">
@@ -177,11 +185,16 @@ footer{
 		<li><a href="http://www.cdc.go.kr/contents.es?mid=a20701000000"><img src="./IMG/v4.PNG"></a></li>
     </ul>
 </section>
+
+<div class='clear'></div> <!-- float 속성 해제 -->
+<footer>
 <div id="address">
 	<img src="./IMG/address.PNG">
 </div>
 <div id="customer">
 	<img src="./IMG/customer.PNG">
 </div>
+</footer>
+
 </body>
 </html>
